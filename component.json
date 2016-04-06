@@ -1,0 +1,42 @@
+{
+  "title" : "Trello-Webhook",
+  "description": "Test component for aplynk by sumit",
+  "credentials": {
+    "fieds": {
+      "key": {
+        "label": "Dev Key",
+        "required": "true",
+        "viewClass": "TextFieldView"
+      },
+      "token": {
+        "label": "Token",
+        "required": "true",
+        "viewClass": "TextFieldView"
+      },
+      "username": {
+        "label": "Username",
+        "required": "true",
+        "viewClass": "TextFieldView"
+      },
+      "board_name": {
+        "label": "Board",
+        "required": "true",
+        "viewClass": "TextFieldView"
+      },
+      "list_name": {
+        "label": "List",
+        "required": "true",
+        "viewClass": "TextFieldView"
+      }
+    }
+  },
+  "triggers": {
+    "getCompletedTasks": {
+      "main": "com.aplynk.sumit.triggers.GetCompletedTasks",
+      "title": "Get completed Tasks",
+      "metadata": {
+        "out": "./src/schemas/getCompletedTasks.out.json"
+      }
+    }
+  }
+}
